@@ -13,7 +13,6 @@ app.get("/api/hgraph/transactions", async (req, res) => {
     const decodedMemo = req.query.decoded_memo || req.query.query;
     const cryptoTransferEntityId =
       req.query.crypto_transfer_entity_id || req.query.accountFrom;
-    const limit = parseInt(req.query.limit) || 10;
     const orderBy = req.query.order_by || "desc";
 
     if (!payerAccountId || !decodedMemo || !cryptoTransferEntityId) {
@@ -34,7 +33,6 @@ app.get("/api/hgraph/transactions", async (req, res) => {
             crypto_transfer: { entity_id: { _eq: ${cryptoTransferEntityId} } }
           }
           order_by: { consensus_timestamp: ${orderBy} }
-          limit: ${limit}
         ) {
           consensus_timestamp
           payer_account_id

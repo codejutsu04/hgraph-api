@@ -1,14 +1,12 @@
 {
-  "name": "hgraph-dragonglass-query",
+  "name": "kpay-transaction-comparison-api",
   "version": "1.0.0",
-  "description": "HGraph SDK implementation of Dragonglass query",
+  "description": "API for comparing blockchain transaction data between Dragonglass and HGraphIO to detect discrepancies",
   "type": "module",
-  "main": "dragonglass-query.js",
+  "main": "api-server.js",
   "scripts": {
-    "start": "node dragonglass-query.js",
-    "dev": "node --watch dragonglass-query.js",
-    "api": "node api-server.js",
-    "api:dev": "node --watch api-server.js"
+    "start": "node api-server.js",
+    "dev": "node --watch api-server.js"
   },
   "dependencies": {
     "cors": "^2.8.5",
@@ -18,5 +16,21 @@
   },
   "engines": {
     "node": ">=18.0.0"
+  },
+  "keywords": [
+    "hedera",
+    "blockchain",
+    "transaction",
+    "comparison",
+    "dragonglass",
+    "hgraph",
+    "api",
+    "kpay"
+  ],
+  "author": "Your Name",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/yourusername/kpay-transaction-comparison-api.git"
   }
 }

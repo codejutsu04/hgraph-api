@@ -607,15 +607,9 @@ app.get("/api/dashboard/status", async (req, res) => {
 
       // Quick test URLs for the three main endpoints
       test_urls: {
-        compare: `${req.protocol}://${req.get(
-          "host"
-        )}/api/transactions/compare?payerID=26027&query=kpay.live&accountFrom=657983`,
-        hgraph_data: `${req.protocol}://${req.get(
-          "host"
-        )}/api/hgraph/transactions?payerID=26027&query=kpay.live&accountFrom=657983`,
-        hgraph_dg_format_data: `${req.protocol}://${req.get(
-          "host"
-        )}/api/hgraph/transactions/dg-format?payerID=26027&query=kpay.live&accountFrom=657983`,
+        compare: `labs1.kpay.uk/api/transactions/compare?payerID=26027&query=kpay.live&accountFrom=657983`,
+        hgraph_data: `labs1.kpay.uk/api/hgraph/transactions?payerID=26027&query=kpay.live&accountFrom=657983`,
+        hgraph_dg_format_data: `labs1.kpay.uk/api/hgraph/transactions/dg-format?payerID=26027&query=kpay.live&accountFrom=657983`,
       },
     };
 

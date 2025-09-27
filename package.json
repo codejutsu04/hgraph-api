@@ -27,10 +27,10 @@
     "api",
     "kpay"
   ],
-  "author": "Your Name",
+  "author": "codejutsu04",
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/yourusername/kpay-transaction-comparison-api.git"
+    "url": "https://github.com/codejutsu04/dg-hgraph-compare"
   }
 }
